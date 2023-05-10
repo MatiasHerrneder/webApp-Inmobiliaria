@@ -1,0 +1,96 @@
+html, body {
+    font: 16px/1.5 Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedorFullScreen {
+    width: 100%;
+    height: 100%;
+}
+
+#contenedorBienvenida {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contenedorBienvenida > p { 
+    font-size: 3rem;
+}
+
+#contenedorBienvenida > div {
+    padding: 1rem 5rem;
+    margin-bottom: 10rem;
+    background-color: #EDF2F4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* Boton con texto
+#contenedorBienvenida > div > button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background: #2B2D42;
+    color: #FFF;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    cursor: pointer;
+} */
+
+#contenedorBienvenida > div > button {
+    padding: 0;
+    background: #FFF;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    cursor: pointer;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/694/694985.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 80% 80%; /* Set the size of the background image */
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#contenedorBienvenida > div > button:hover {
+    border-color: #777;
+}
+
+select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: none;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    max-width: 10rem;
+    cursor: pointer;
+    height: 2.5rem;
+}
+
+select:hover,
+select:focus {
+    border-color: #777;
+}
+
+.contenedorFullScreen > img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    filter: brightness(0.8);
+}

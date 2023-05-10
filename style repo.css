@@ -1,0 +1,102 @@
+html, body {
+    /* font: 14px/1.5 Arial, sans-serif; */
+    font: 16px/1.5 Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cuerpoPrincipal {
+    background-color: #fff;
+}
+
+.presentacion {
+    /* background-image: url('https://img.archiexpo.es/images_ae/photo-g/151519-16996531.jpg');
+    background: url('imgs/p2f1.jpg') no-repeat fixed;
+    background-size: 100% auto; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; */
+    /* margin:0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover; */
+    /* position: relative;
+    text-align: center;
+    color: white; */
+
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.presentacionContenedor > img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    filter: brightness(0.8);
+}
+
+.presentacionContenedor {
+    /* margin: 0;
+    text-decoration: none;
+    
+    
+    text-align: center;
+    top: 30%;
+    position: relative; */
+    /* width: 100%; */
+    
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    position: fixed;
+    z-index: -10;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.presentacionContenedor > h1 {
+    color: #fff;
+    /* font-size: calc(5vw * 1rem);
+    font-size: calc(2.5rem * (100vw / 600)); /* 2.5 times the root font size, multiplied by viewport width divided by 600 
+    font-size: 4vw;
+    font-size: 5rem; */
+    font-size: calc(1rem + 3vw);
+    font-weight: 300;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .nombre {
+    background-image: url('imgs/logo2.png');
+    background-repeat: no-repeat;
+    left: 10%;
+    top: 20%;
+    width: 20%;
+    height: 20%;
+} */
+
+/* .contenedor {
+    position: relative;
+    width: fit-content;
+  padding: 0 3rem;
+  text-align: center;
+  color: #000;
+  height: 100%;
+} */
+
