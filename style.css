@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     font: 16px/1.5 Arial, sans-serif;
     font-family: 'Lato', sans-serif;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
     height: 100%;
-    padding: 0px;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Raleway', sans-serif;
 }
@@ -24,52 +28,38 @@ html, body {
 
 #contenedorBienvenida > p { 
     font-size: 3rem;
+    overflow: hidden;
 }
 
 #contenedorBienvenida > div {
     padding: 1rem 5rem;
     margin-bottom: 10rem;
-    background-color: #EDF2F4;
+    /* background: linear-gradient(0.25turn, #f41, #f14);
+    background: #D90429; */
+    background: #EDF2F4;
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 3px;
 }
-/* Boton con texto
-#contenedorBienvenida > div > button {
-    font-size: 1rem;
-    padding: 0.5rem;
-    background: #2B2D42;
-    color: #FFF;
-    border: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    transition: border-color 0.3s ease-in-out;
-    cursor: pointer;
-} */
 
-#contenedorBienvenida > div > button {
-    padding: 0;
+#contenedorBienvenida a {
+    text-decoration: none;
     background: #FFF;
-    border: none;
     border: 1px solid #ccc;
     border-radius: 4px;
-    outline: none;
-    transition: border-color 0.3s ease-in-out;
-    cursor: pointer;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/694/694985.png");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: 80% 80%; /* Set the size of the background image */
-    width: 2.5rem;
     height: 2.5rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#contenedorBienvenida > div > button:hover {
-    border-color: #777;
+#contenedorBienvenida a img {
+    height: 85%;
 }
 
-select {
+#contenedorBienvenida select {
     font-size: 1rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -81,12 +71,67 @@ select {
     max-width: 10rem;
     cursor: pointer;
     height: 2.5rem;
+    text-align-last: center;
 }
 
-select:hover,
-select:focus {
+#contenedorBienvenida select:hover,
+#contenedorBienvenida select:focus {
     border-color: #777;
 }
+
+#contenedorInicio {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("imgs/p2f1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#contenedorInicio > div {
+    padding-bottom: 30vh;
+    padding-right: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contenedorInicio > div > div {
+    width: calc(100%);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+#contenedorInicio h1 {
+    margin: 0;
+    color: #FFF;
+    font-size: 3.3rem;
+    padding-bottom: 0.5rem;
+}
+
+#contenedorInicio a {
+    text-decoration: none;
+    border: solid 1px;
+    border-radius: 5px;
+    color: #FFF;
+    padding: calc(0.4rem - 1px) 1rem calc(0.4rem - 1px) 1rem;
+    font-size: 1.4rem;
+    transition: 0.3s ease-out;
+    text-align: center;
+}
+
+#contenedorInicio a:first-of-type{
+    background:#D90429; 
+    border-color: #D90429;
+}
+
+#contenedorInicio a:hover{
+    flex-grow: 1;
+}
+
+
 
 .contenedorFullScreen > img {
     object-fit: cover;
