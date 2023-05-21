@@ -3,30 +3,89 @@
 }
 
 html, body {
+    background: #FFFFFA;
     font: 16px/1.5 Arial, sans-serif;
     font-family: 'Lato', sans-serif;
     margin: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     padding: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Raleway', sans-serif;
 }
 
+#preHeader {
+    height: 2rem;
+    background: #D90429;
+}
+
+.navBar {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0);
+}
+
+.navSolida {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background: #FFFFFA;
+}
+
+.navBar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+    justify-content: flex-end;
+}
+
+.navBar img {
+    position: absolute;
+    height: 2.5rem;
+    top: 50%;
+    transform: translate(10%, -50%);
+}
+
+.navSolida img {
+    filter: invert(100%);
+}
+
+.navBar li {
+    display: inline-block;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.navSolida a {
+    color: #000;
+}
+
+.navBar a:hover {
+    font-weight: lighter;
+}
+
 .contenedorFullScreen {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 2rem);
 }
 
 #contenedorBienvenida {
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#contenedorBienvenida > p { 
+#contenedorBienvenida > p {
     font-size: 3rem;
     overflow: hidden;
 }
@@ -36,7 +95,7 @@ html, body {
     margin-bottom: 10rem;
     /* background: linear-gradient(0.25turn, #f41, #f14);
     background: #D90429; */
-    background: #EDF2F4;
+    background: #DDD8C4;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -97,7 +156,7 @@ html, body {
 }
 
 #contenedorInicio > div > div {
-    width: calc(100%);
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -107,7 +166,7 @@ html, body {
 #contenedorInicio h1 {
     margin: 0;
     color: #FFF;
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     padding-bottom: 0.5rem;
 }
 
@@ -117,25 +176,16 @@ html, body {
     border-radius: 5px;
     color: #FFF;
     padding: calc(0.4rem - 1px) 1rem calc(0.4rem - 1px) 1rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     transition: 0.3s ease-out;
     text-align: center;
 }
 
 #contenedorInicio a:first-of-type{
-    background:#D90429; 
+    background:#D90429;
     border-color: #D90429;
 }
 
 #contenedorInicio a:hover{
     flex-grow: 1;
-}
-
-
-
-.contenedorFullScreen > img {
-    object-fit: cover;
-    width: inherit;
-    height: inherit;
-    filter: brightness(0.8);
 }

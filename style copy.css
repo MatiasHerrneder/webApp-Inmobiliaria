@@ -1,102 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
-    /* font: 14px/1.5 Arial, sans-serif; */
+    background: #f6f6f8;
     font: 16px/1.5 Arial, sans-serif;
     font-family: 'Lato', sans-serif;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
     height: 100%;
-    padding: 0px;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Raleway', sans-serif;
 }
 
-.cuerpoPrincipal {
-    background-color: #fff;
+.navBar {
+    position: fixed;
+    background: #EDF2F4;
+    background: linear-gradient(#EDF2F4 0 97%, #D90429 97% 100%);
+    background: linear-gradient(#D90429 0 3%, #EDF2F4 3% 100%);
+    background: linear-gradient(#242528 0 97%, #FFF 97% 100%);
+    background: #1e1e1e;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
-.presentacion {
-    /* background-image: url('https://img.archiexpo.es/images_ae/photo-g/151519-16996531.jpg');
-    background: url('imgs/p2f1.jpg') no-repeat fixed;
-    background-size: 100% auto; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; */
-    /* margin:0;
-    padding: 0;
+.navBar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+    justify-content: flex-end;
+}
+
+.navBar li {
+    display: inline-block;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #2B2D42;
+}
+
+.navBar a:hover {
+    font-weight: lighter;
+}
+
+.contenedorFullScreen {
+    width: 100%;
+    height: 100%;
+}
+
+#contenedorBienvenida {
+    /* background: #fff; */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-size: cover; */
-    /* position: relative;
-    text-align: center;
-    color: white; */
-
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: white;
+    flex-direction: column;
 }
 
-.presentacionContenedor > img {
+#contenedorBienvenida > p { 
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+#contenedorBienvenida > div {
+    padding: 1rem 5rem;
+    margin-bottom: 10rem;
+    /* background: linear-gradient(0.25turn, #f41, #f14);
+    background: #D90429; */
+    background: #EDF2F4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 3px;
+}
+
+#contenedorBienvenida a {
+    text-decoration: none;
+    background: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 2.5rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorBienvenida a img {
+    height: 85%;
+}
+
+#contenedorBienvenida select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: none;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    max-width: 10rem;
+    cursor: pointer;
+    height: 2.5rem;
+    text-align-last: center;
+}
+
+#contenedorBienvenida select:hover,
+#contenedorBienvenida select:focus {
+    border-color: #777;
+}
+
+#contenedorInicio {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("imgs/p2f1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#contenedorInicio > div {
+    padding-bottom: 30vh;
+    padding-right: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contenedorInicio > div > div {
+    width: calc(100%);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+#contenedorInicio h1 {
+    margin: 0;
+    color: #FFF;
+    font-size: 3.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#contenedorInicio a {
+    text-decoration: none;
+    border: solid 1px;
+    border-radius: 5px;
+    color: #FFF;
+    padding: calc(0.4rem - 1px) 1rem calc(0.4rem - 1px) 1rem;
+    font-size: 1.3rem;
+    transition: 0.3s ease-out;
+    text-align: center;
+}
+
+#contenedorInicio a:first-of-type{
+    background:#D90429; 
+    border-color: #D90429;
+}
+
+#contenedorInicio a:hover{
+    flex-grow: 1;
+}
+
+
+
+.contenedorFullScreen > img {
     object-fit: cover;
     width: inherit;
     height: inherit;
     filter: brightness(0.8);
 }
-
-.presentacionContenedor {
-    /* margin: 0;
-    text-decoration: none;
-    
-    
-    text-align: center;
-    top: 30%;
-    position: relative; */
-    /* width: 100%; */
-    
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
-    position: fixed;
-    z-index: -10;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.presentacionContenedor > h1 {
-    color: #fff;
-    /* font-size: calc(5vw * 1rem);
-    font-size: calc(2.5rem * (100vw / 600)); /* 2.5 times the root font size, multiplied by viewport width divided by 600 
-    font-size: 4vw;
-    font-size: 5rem; */
-    font-size: calc(1rem + 3vw);
-    font-weight: 300;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* .nombre {
-    background-image: url('imgs/logo2.png');
-    background-repeat: no-repeat;
-    left: 10%;
-    top: 20%;
-    width: 20%;
-    height: 20%;
-} */
-
-/* .contenedor {
-    position: relative;
-    width: fit-content;
-  padding: 0 3rem;
-  text-align: center;
-  color: #000;
-  height: 100%;
-} */
-
